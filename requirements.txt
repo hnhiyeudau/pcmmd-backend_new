@@ -1,4 +1,7 @@
 fastapi
 uvicorn
+torch
+torchvision
+pillow
 python-multipart
-ultralytics==8.1.15  # hoặc phiên bản bạn đang dùng
+ultralytics
