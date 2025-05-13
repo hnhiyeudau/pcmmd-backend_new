@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+python-multipart
+ultralytics==8.1.15  # hoặc phiên bản bạn đang dùng
