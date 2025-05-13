@@ -4,14 +4,16 @@ from app.services.predict import predict_image
 
 app = FastAPI()
 
+
 # Cho phép gọi từ mọi nguồn (CORS)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["https://pcmmd-frontend.vercel.app"],  # hoặc chỉ định domain frontend của bạn
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+print("✅ CORS middleware loaded with:", allow_origins)
 
 # Root endpoint kiểm tra server
 @app.get("/")
