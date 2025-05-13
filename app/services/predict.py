@@ -3,7 +3,12 @@ import cv2
 import uuid
 import os
 import base64
+import torch
+from ultralytics import YOLO
+from torch.serialization import add_safe_globals
+import ultralytics.nn.tasks
 
+add_safe_globals([ultralytics.nn.tasks.DetectionModel])
 # Tải mô hình YOLO đã huấn luyện
 model = YOLO("model/yolo10l_final.pt")  # điều chỉnh path nếu cần
 
