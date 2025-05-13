@@ -7,7 +7,7 @@ app = FastAPI()
 # Cho phép gọi từ mọi nguồn (CORS)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # hoặc chỉ định domain frontend của bạn
+    allow_origins=["https://pcmmd-frontend.vercel.app"],  # hoặc chỉ định domain frontend của bạn
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
