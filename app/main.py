@@ -13,7 +13,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-print("✅ CORS middleware loaded with:", allow_origins)
+# print("✅ CORS middleware loaded with:", allow_origins)
 
 # Root endpoint kiểm tra server
 @app.get("/")
